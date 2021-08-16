@@ -32,26 +32,33 @@
     <!--HEADER START-->
     <header class="header">
       <nav class="header__nav">
-        <div class="container">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="">Каталог</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="">Доставка и оплата</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="">Отзывы</a></li>
-            <li class="">
-              <a class="header__nav-link header__logo-link" href="#!"
-                ><img
-                  class="header__logo-img"
-                  src="./img/svg/logo.svg"
-                  alt="Авторские букеты в Петербурге"
-                  title="Авторские букеты в Петербурге"
-              /></a>
-            </li>
-            <li class="header__nav-item"><a class="header__nav-link" href="">Спецпредложения</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="">Контакты</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="">Корзина</a></li>
-          </ul>
+        <ul class="header__nav-list container">
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Каталог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Доставка и оплата</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Отзывы</a></li>
+          <li class="">
+            <a class="header__logo-link" href="#!"
+              ><img
+                class="header__logo-img"
+                src="./img/svg/logo.svg"
+                alt="Авторские букеты в Петербурге"
+                title="Авторские букеты в Петербурге"
+            /></a>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Спецпредложения</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Корзина</a></li>
+        </ul>
+        <div class="header__nav-close">
+          <div class="header__nav-close-line"></div>
+          <div class="header__nav-close-line"></div>
         </div>
       </nav>
+      <div class="header__burger burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
     </header>
     <!--HEADER END-->
 
@@ -60,12 +67,36 @@
       <!--BANNER SECTION START-->
       <section class="banner container">
         <div class="row">
-          <div class="col-4 banner__title"></div>
-          <div class="col-4"><img src="./img/banner-1.jpg" alt="" /></div>
-          <div class="col-4"><img src="./img/banner-2.jpg" alt="" /></div>
+          <div class="col-4 banner__textblock">
+            <h1 class="banner__title">Авторские букеты <span>в Петербурге</span></h1>
+            <p class="banner__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
+            <a href="#!" class="link banner__link">Смотреть каталог</a>
+          </div>
+          <div class="col-4"><img class="banner__img" src="./img/banner-1.jpg" alt="" /></div>
+          <div class="col-4"><img class="banner__img" src="./img/banner-2.jpg" alt="" /></div>
         </div>
       </section>
       <!--BANNER SECTION END-->
+      <!--ADVANTAGES SECTION START-->
+      <section class="advantages container">
+        <ul class="row">
+          <li class="col-4 advantages__item-1">
+            <p class="advantages__title">Быстрая доставка</p>
+            <p class="advantages__desc">Можем собрать букет и передать его в доставку всего за час.</p>
+          </li>
+          <li class="col-4 advantages__item-2">
+            <p class="advantages__title">Всегда свежие цветы</p>
+            <p class="advantages__desc">
+              Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
+            </p>
+          </li>
+          <li class="col-4 advantages__item-3">
+            <p class="advantages__title">Отправляем фото цветов</p>
+            <p class="advantages__desc">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+          </li>
+        </ul>
+      </section>
+      <!--ADVANTAGES ECTION END-->
       <!--POPULAR SECTION START-->
 
       <!--POPULAR SECTION END-->
