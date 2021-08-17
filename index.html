@@ -33,11 +33,11 @@
     <header class="header">
       <nav class="header__nav">
         <ul class="header__nav-list container">
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Каталог</a></li>
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Доставка и оплата</a></li>
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Отзывы</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#promo">Каталог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#steps">Доставка и оплата</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#reviews">Отзывы</a></li>
           <li class="">
-            <a class="header__logo-link" href="#!"
+            <a class="header__logo-link" href="#"
               ><img
                 class="header__logo-img"
                 src="./img/svg/logo.svg"
@@ -45,9 +45,9 @@
                 title="Авторские букеты в Петербурге"
             /></a>
           </li>
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Спецпредложения</a></li>
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Контакты</a></li>
-          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="">Корзина</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#links">Спецпредложения</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#contacts">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-scroll" href="#popular">Корзина</a></li>
         </ul>
         <div class="header__nav-close">
           <div class="header__nav-close-line"></div>
@@ -98,7 +98,7 @@
       </section>
       <!--ADVANTAGES ECTION END-->
       <!--POPULAR SECTION START-->
-      <section class="popular container">
+      <section id="popular" class="popular container">
         <h2 class="popular__title">Популярные букеты</h2>
         <div class="row">
           <div class="col-4 popular__text">
@@ -108,7 +108,9 @@
             <p class="popular__price">3600 руб.</p>
             <a href="#!" class="link">Заказать</a>
           </div>
-          <div class="col-4"><img src="./img/popular.png" title="Букет «Нежность»" alt="Букет «Нежность»" /></div>
+          <div class="col-4">
+            <img class="popular__img" src="./img/popular.png" title="Букет «Нежность»" alt="Букет «Нежность»" />
+          </div>
         </div>
         <div class="popular__slider">
           <button class="slider-prev slider-arrow" type="button"></button>
@@ -117,40 +119,34 @@
       </section>
       <!--POPULAR SECTION END-->
       <!--LINKS SECTION START-->
-      <section class="links container">
+      <section id="links" class="links container">
         <div class="row">
-          <a href="#!" class="links__link">
-            <figure class="col-4 links__card">
-              <img class="links__img" src="./img/links-1.jpg" alt="" />
-              <figcaption class="links__text">
-                <h3 class="links__title">Свадебные букеты</h3>
-                <p class="links__desc">Букеты для невест</p>
-              </figcaption>
-            </figure>
-          </a>
-          <a href="#!" class="links__link">
-            <figure class="col-4 links__card">
-              <img class="links__img" src="./img/links-2.jpg" alt="" />
-              <figcaption class="links__text">
-                <h3 class="links__title">Букеты с пионами</h3>
-                <p class="links__desc">Букеты с сезонными пионами</p>
-              </figcaption>
-            </figure>
-          </a>
-          <a href="#!" class="links__link">
-            <figure class="col-4 links__card">
-              <img class="links__img" src="./img/links-3.jpg" alt="" />
-              <figcaption class="links__text">
-                <h3 class="links__title">Выбрать букет</h3>
-                <p class="links__desc">Букеты в ассортименте</p>
-              </figcaption>
-            </figure></a
-          >
+          <figure class="col-4 links__card">
+            <a href="#!" class="links__link"><img class="links__img" src="./img/links-1.jpg" alt="" /></a>
+            <figcaption class="links__text">
+              <h3 class="links__title">Свадебные букеты</h3>
+              <p class="links__desc">Букеты для невест</p>
+            </figcaption>
+          </figure>
+          <figure class="col-4 links__card">
+            <a href="#!" class="links__link"><img class="links__img" src="./img/links-2.jpg" alt="" /></a>
+            <figcaption class="links__text">
+              <h3 class="links__title">Букеты с пионами</h3>
+              <p class="links__desc">Букеты с сезонными пионами</p>
+            </figcaption>
+          </figure>
+          <figure class="col-4 links__card">
+            <a href="#!" class="links__link"> <img class="links__img" src="./img/links-3.jpg" alt="" /></a>
+            <figcaption class="links__text">
+              <h3 class="links__title">Выбрать букет</h3>
+              <p class="links__desc">Букеты в ассортименте</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!--LINKS SECTION END-->
       <!--PROMO SECTION START-->
-      <section class="promo container">
+      <section id="promo" class="promo container">
         <div class="row">
           <div class="col-6 promo__text">
             <h4 class="promo__title">
@@ -167,22 +163,22 @@
       </section>
       <!--PROMO SECTION END-->
       <!--STEPS SECTION START-->
-      <section class="steps container">
+      <section id="steps" class="steps container">
         <h2 class="steps__title">4 шага к идеальному букету</h2>
         <ul class="row">
-          <li class="col-3 steps__card">
+          <li class="col-3 steps__card steps__card-1">
             <h3 class="steps__subtitle">Заказ</h3>
             <p class="steps__desc">Выбирите понравившейся букет из каталога и оформите заказ</p>
           </li>
-          <li class="col-3 steps__card">
+          <li class="col-3 steps__card steps__card-2">
             <h3 class="steps__subtitle">Уточнение деталей</h3>
             <p class="steps__desc">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
           </li>
-          <li class="col-3 steps__card">
+          <li class="col-3 steps__card steps__card-3">
             <h3 class="steps__subtitle">Оплата</h3>
             <p class="steps__desc">Оплатить заказ можно онлайн на сайте или при получении</p>
           </li>
-          <li class="col-3 steps__card">
+          <li class="col-3 steps__card steps__card-3">
             <h3 class="steps__subtitle">Доставка</h3>
             <p class="steps__desc">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
           </li>
@@ -190,13 +186,91 @@
       </section>
       <!--STEPS SECTION END-->
       <!--NEWS SECTION START-->
-
+      <section class="news container">
+        <div class="row">
+          <div class="col news__text">
+            <h2 class="news__title">Следите за нашими новостями</h2>
+            <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+            <ul class="news__social-list">
+              <li class="news__social-item"></li>
+              <li class="news__social-item"></li>
+              <li class="news__social-item"></li>
+            </ul>
+          </div>
+          <div class="col news__img-list1">
+            <img class="news__img" src="./img/news-1.jpg" alt="" />
+            <img class="news__img" src="./img/news-2.jpg" alt="" />
+          </div>
+          <div class="col news__img-list2">
+            <img class="news__img" src="./img/news-3.jpg" alt="" />
+          </div>
+        </div>
+      </section>
       <!--NEWS SECTION END-->
       <!--REVIEWS SECTION START-->
-
+      <section id="reviews" class="reviews container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="row reviews__list">
+          <li class="col-3 reviews__item">
+            <p class="reviews__text">
+              Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
+            </p>
+            <p class="reviews__sign">Марина</p>
+          </li>
+          <li class="col-3 reviews__item">
+            <p class="reviews__text">
+              <span>
+                Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё
+                заказывать!</span
+              >
+            </p>
+            <p class="reviews__sign">Татьяна</p>
+          </li>
+          <li class="col-3 reviews__item">
+            <p class="reviews__text">
+              Выбор букетов на любой вкус цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут
+              красивый букет!
+            </p>
+            <p class="reviews__sign">Ольга</p>
+          </li>
+        </ul>
+      </section>
       <!--REVIEWS SECTION END-->
       <!--CONTACTS SECTION START-->
-
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 contacts__text">
+              <h2 class="contacts__title">Мы ждем вас</h2>
+              <ul class="contacts-list">
+                <li class="contacts__item">
+                  <p class="contacts__desc">Приходите к нам:</p>
+                  <p class="contacts__desc">
+                    <span>Санкт-Петербург,<br />ул. Большая Конюшенная, 19</span>
+                  </p>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__desc">Режим работы:</p>
+                  <p class="contacts__desc"><span>Пн-Вск, с 9-00 до 20-00</span></p>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__desc">Позвоните нам:</p>
+                  <a href="tel:+78129834719"
+                    ><p class="contacts__desc"><span>+ 7 (812) 983-47-19</span></p></a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__desc">Напишите нам:</p>
+                  <a href="mailto:info@botanika.ru"
+                    ><p class="contacts__desc"><span>info@botanika.ru</span></p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--CONTACTS SECTION END-->
     </main>
     <!--MAIN SECTION END-->
