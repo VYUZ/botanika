@@ -36,6 +36,13 @@ ol,
 ul {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 body {
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 16px;
@@ -557,7 +564,7 @@ h3 {
   flex: $col-6;
   @media screen and (max-width: 992px) {
     flex: $col-12;
-    background: url(../img/promo.jpg) center center no-repeat;
+    background: url(../img/promo-min.jpg) center center no-repeat;
     background-size: cover;
     max-width: 100%;
     margin: 0;
@@ -578,7 +585,7 @@ h3 {
   padding: 0 121px 64px 102px;
 }
 .promo__img {
-  background: url(../img/promo.jpg) center center no-repeat;
+  background: url(../img/promo-min.jpg) center center no-repeat;
   background-size: cover;
   flex: $col-6;
 }
@@ -757,7 +764,7 @@ h3 {
 /* REVIEWS SECTION END */
 /* CONTACTS SECTION START */
 .contacts {
-  background: url(../img/map.jpg) center center no-repeat;
+  background: url(../img/map-min.jpg) center center no-repeat;
   min-height: 645px;
   background-size: cover;
   & .container {
