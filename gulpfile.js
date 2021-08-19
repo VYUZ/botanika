@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
-// const removeComments = require ("gulp-strip-css-comments");
+const removeComments = require ("gulp-strip-css-comments");
 const rename = require("gulp-rename");
 // const cleanCss = require("gulp-clean-css");
 // const gulpIf = require("gulp-if");
@@ -46,8 +46,8 @@ gulp.task("mincss", function () {
       .pipe(debug({ title: "rename" }))
       // .pipe(cleanCss())
       // .pipe(debug({ title: "cleanCss" }))
-      // .pipe(removeComments())
-      // .pipe(debug({ title: "removeComments" }))
+      .pipe(removeComments())
+      .pipe(debug({ title: "removeComments" }))
       .pipe(
         cssnano({
           zindex: false,

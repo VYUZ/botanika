@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/style.min.css" > 
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
@@ -125,7 +125,7 @@
       <section id="links" class="links container">
         <div class="row">
           <figure class="col links__card">
-            <a href="#!" class="links__link"><img class="links__img" src="./img/links-1-min" alt="" /></a>
+            <a href="#!" class="links__link"><img class="links__img" src="./img/links-1-min.jpg" alt="" /></a>
             <figcaption class="links__text">
               <h3 class="links__title">Свадебные букеты</h3>
               <p class="links__desc">Букеты для невест</p>
@@ -287,10 +287,54 @@
     <!--MAIN SECTION END-->
 
     <!--FOOTER SECTION START-->
-
+    <footer class="footer">
+      <div class="row footer__list container">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#"
+            ><img
+              class="footer__logo-img"
+              src="./img/svg/logo-footer.svg"
+              alt="Авторские букеты в Петербурге"
+              title="Авторские букеты в Петербурге"
+          /></a>
+        </div>
+        <ul class="footer__nav row">
+          <li class="footer__item"><a class="footer__link" href="#promo">Каталог</a></li>
+          <li class="footer__item"><a class="footer__link" href="#steps">Доставка и оплата</a></li>
+          <li class="footer__item"><a class="footer__link" href="#reviews">Отзывы</a></li>
+          <li class="footer__item"><a class="footer__link" href="#links">Спецпредложения</a></li>
+          <li class="footer__item"><a class="footer__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="https://instagram.com/" title="Инстаграм" class="footer__social-link"
+              ><img src="./img/svg/instagram_icon-footer.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="#facebook"
+              onclick="window.open('https://www.facebook.com/sharer.php?src=sp&u='+ window.location.href +'')"
+              title="Фэйсбук"
+              class="footer__social-link"
+              ><img src="./img/svg/facebook_icon-footer.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="#twitter"
+              onclick="window.open('https://twitter.com/intent/tweet?url='+ window.location.href +'')"
+              title="Твиттер"
+              class="footer__social-link"
+              ><img src="./img/svg/twitter_icon-footer.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!--FOOTER SECTION END-->
 
     <!-- <script src="./js/main.js" type="module"></script> -->
-    script src="./js/main.min.js" type="module"></script>
+    <script src="./js/main.min.js" type="module"></script>
   </body>
 </html>
