@@ -129,6 +129,7 @@ h3 {
     font-size: 18px;
   }
 }
+
 /* HEADER START */
 .header {
   position: fixed;
@@ -369,7 +370,6 @@ h3 {
 }
 .popular__text {
   flex: $col-4;
-  text-align: center;
   margin-bottom: 20px;
 }
 .popular__subtitle {
@@ -380,6 +380,10 @@ h3 {
   margin-bottom: 24px;
   @media screen and (max-width: 992px) {
     margin-bottom: 12px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
   }
 }
 .popular__size {
@@ -417,12 +421,13 @@ h3 {
   background-color: $color;
   left: 0;
   display: block;
+  transition: 0.3s;
 }
 .slider-prev {
   left: 44%;
   top: 4px;
   border: none;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
   @media screen and (max-width: 992px) {
     left: 42%;
   }
@@ -438,9 +443,9 @@ h3 {
     width: 15px;
     height: 4px;
     top: 4px;
-    right: -6px;
+    right: 38px;
     background-color: $color;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
   &::after {
     content: "";
@@ -448,9 +453,15 @@ h3 {
     width: 4px;
     height: 15px;
     top: -10px;
-    right: 0px;
+    right: 43px;
     background-color: $color;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+  }
+  &:hover {
+    transform: translateX(-3px);
+  }
+  &:active {
+    opacity: 0.5;
   }
 }
 .slider-next {
@@ -486,6 +497,12 @@ h3 {
     background-color: $color;
     transform: rotate(-45deg);
   }
+  &:hover {
+    transform: translateX(3px);
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
 .popular__img {
   object-fit: cover;
@@ -518,6 +535,7 @@ h3 {
 }
 .links__img {
   width: 100%;
+  height: 100%;
 }
 .links__text {
   position: absolute;
@@ -556,6 +574,16 @@ h3 {
 /* PROMO SECTION START */
 .promo {
   background: $color;
+  @media screen and (max-width: 992px) {
+    background: none;
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 420px) {
+    margin-left: 0;
+  }
+}
+.promo .row {
+  justify-content: space-between;
 }
 .promo__text {
   color: white;
@@ -588,6 +616,7 @@ h3 {
   background: url(../img/promo-min.jpg) center center no-repeat;
   background-size: cover;
   flex: $col-6;
+  margin: 0;
 }
 /* PROMO SECTION END */
 /* STEPS SECTION START */
@@ -735,6 +764,8 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.reviews_wrap {
   border: 1px solid $color;
 }
 .reviews__title {
@@ -748,6 +779,8 @@ h3 {
   margin-bottom: 64px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .reviews__item {
@@ -761,6 +794,9 @@ h3 {
 }
 .reviews__text {
   padding-bottom: 16px;
+}
+.reviews__sign {
+  font-weight: 500;
 }
 /* REVIEWS SECTION END */
 /* CONTACTS SECTION START */
@@ -805,9 +841,9 @@ h3 {
   }
 }
 .contacts__title {
-  padding: 40px 117px 42px 35px;
+  padding: 40px 90px 42px 35px;
   @media screen and (max-width: 1200px) {
-    padding: 40px 100px 30px 35px;
+    padding: 40px 90px 30px 35px;
   }
   @media screen and (max-width: 992px) {
     padding: 30px;
